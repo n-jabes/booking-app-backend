@@ -16,10 +16,9 @@ const connect = async () => {
 mongoose.connection.on("disconnected", () => {
     console.log("mongoose disconnected!")
 })
-
-mongoose.connection.on("connected", () => {
-    console.log("mongoose connected!")
-})
+// mongoose.connection.on("connected", () => {
+//     console.log("mongoose connected!")
+// })
 
 app.listen("8800", () => {
     connect()
